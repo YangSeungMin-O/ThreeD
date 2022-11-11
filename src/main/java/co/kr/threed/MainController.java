@@ -12,4 +12,9 @@ public class MainController {
     public List<String> main(){
         return Arrays.asList("메인페이지 RestController 생성", "asList 테스트1", "asList 테스트2");
     }
+
+    @GetMapping("test")
+    public String test(){
+        return "TEST";
+    }
 }
